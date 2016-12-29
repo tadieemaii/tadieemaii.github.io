@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<!-- About Us Page
+
+Team Member Names: Tatianna Landry
+                   Kaiden McFayden-Faint
+                   Jarret Wright
+                   Ka Chun Leung (Sunny)
+
+File: aboutus.html
+
+Date: December 4th 2015 -->
+
+<html>
+  <head>
+    <title> Sandy Point Campground </title>
+    <meta charset="UTF-8"/>
+  	<meta name="author" content="Sandy Point Campground" />
+    <meta name="description" content="A site for sharing information of the campground and the specifications." />
+    <meta name="keywords" content="Camping, British Columbia, Shuswap, Beach, Outdoors" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+  	<link rel="shortcut icon" href="images/tabIcon.gif" type="image/x-icon" />
+  </head>
+
+<body>
+    <section id="header">
+        <header>
+            <nav>
+                <a href="../index.html"> <img class="logo" src="images/Sandy-Point-Campground-Logo.gif" alt="logo" /> </a>
+                <ul id="nav">
+                    <li> <a class="menu" href="../index.html">HOME </a></li>
+                    <li> <a class="menu" href="aboutus.html">ABOUT US </a> </li>
+                    <li> <a class="menu" href="rates.html">RATES </a> </li>
+                    <li> <a class="menu" href="rules.html">RULES </a> </li>
+                    <li> <a class="menu" href="contactus.html">CONTACT US</a></li>
+                    <li> <a class="menu" href="gallery.html">GALLERY</a></li>
+                    <li> <a class="menu" href="crossReferencePage.html">REFERENCE</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section id="pagecontent">
+        <h1> About Us </h1>
+        <p>
+            A family run campground ensuring the best visitor experience for
+            all the campers. We are proud of our location right on  the sandy beach
+            at sandy point. You can view the beautiful town of Salmon Arm right across
+            the lake shadowed under Mount Ida or admire the magnificent Mount Bastion
+            from the sandy point end. We happily accommodate families on various types
+            of camping spots ranging from tenting (in open and trees both) to full hook
+            up trailer spots. We appreciate and prefer bookings to be made over the phone
+            (+1 250-832-3793). Along with the friendly atmosphere at the campground, we
+            would be grateful of you to follow the campground rules and regulations.
+            Thanks. Al and Doris Ono
+        </p>
+    </section>
+
+    <footer id="footer">
+        <div class="footerInfo">
+            <img class="footerIcon" src="./images/phone.png" alt="Phone Icon" />
+            <h3> Phone </h3>
+            250-832-3793 <br />
+        </div>
+        <div class="footerInfo">
+            <img class="footerIcon" src="./images/address.png" alt="Address Icon" />
+            <h3> Address </h3>
+            <address id="address">
+                Sandy Point <br />
+                2100 Sandy Point Rd. <br />
+                Salmon Arm, BC V1E2Z8 <br />
+            </address>
+        </div>
+        <div class="footerInfo">
+            <a href="http://www.facebook.com/pages/Sandy-Point-Beach-Campground/137474779597808" target="blank">
+                <img class="footerIcon" src="./images/facebook.png" alt="Facebook Icon" />
+            </a>
+            <h3> Like us on Facebook! </h3>
+            <p> &copy; 2015 All Rights Reserved.<br /> Sandy Point Campground <br/> Last Modified: 3/12/2015  </p>
+        </div>
+    </footer>
+</body>
+</html>
