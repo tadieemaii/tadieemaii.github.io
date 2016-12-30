@@ -423,7 +423,7 @@ margin-bottom: 7%;
     /* SOCIAL MEDIA ICONS */
 
     .dribbble2 {
-      background: url("/images/dribbblelogo.png");
+      background: url("dribbblelogo.png");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
@@ -433,7 +433,7 @@ margin-bottom: 7%;
     }
 
     .dribbble2:hover {
-      background: url("/images/dribbblelogogrey.png");
+      background: url("dribbblelogogrey.png");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
@@ -443,7 +443,7 @@ margin-bottom: 7%;
     }
 
     .linkedin2 {
-      background: url("/images/linkedinlogo.png");
+      background: url("linkedinlogo.png");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
@@ -454,7 +454,7 @@ margin-bottom: 7%;
     }
 
     .linkedin2:hover {
-      background: url("/images/linkedinlogogrey.png");
+      background: url("linkedinlogogrey.png");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
@@ -465,7 +465,7 @@ margin-bottom: 7%;
     }
 
     .instagram2 {
-      background: url("/images/instagramlogo.png");
+      background: url("instagramlogo.png");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
@@ -475,7 +475,7 @@ margin-bottom: 7%;
     }
 
     .instagram2:hover {
-      background: url("/images/instagramlogogrey.png");
+      background: url("instagramlogogrey.png");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
