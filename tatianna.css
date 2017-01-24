@@ -89,7 +89,7 @@ margin-bottom: 7%;
   }
 
     /* TOP NAVIGATION BAR */
-
+/*
     .navigation {
         padding-top: 1.5%;
         padding-bottom: 1.5%;
@@ -204,7 +204,7 @@ margin-bottom: 7%;
       background-repeat: no-repeat;
       background-size: cover;
 
-    } */
+    } 
 
     .imagemain h1{
       color: #666766;
@@ -236,6 +236,9 @@ margin-bottom: 7%;
     padding-bottom: 3%;
     height: 86%;
     width: 100%;
+	  background: white;
+	  position: absolute;
+	  top: 145%;
   }
 
   .blockabout .icon img{
@@ -304,7 +307,11 @@ margin-bottom: 7%;
     float: left;
 
   }
-
+.block-portfolio {
+background: white;
+	  position: absolute;
+	  top: 345%;
+}
   .block-portfolio img {
     background-color: white;
   }
