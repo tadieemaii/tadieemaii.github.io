@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 @import 'https://fonts.googleapis.com/css?family=Playfair+Display';
 
+
+@font-face {
+    font-family:"KingBasilLite";
+    src: url("King-Basil-Lite.otf") /* TTF file for CSS3 browsers */
+}
+
 /* TATIANNA LANDRY CSS FILE */
 
 /* BODY CONTENT */
@@ -12,6 +18,11 @@
 
   .front-imagecropped {
     display: none;
+  }
+
+  #aboutheader {
+    margin-left: 57.5%;
+    margin-top: 18%;
   }
 
 .fullscreen-bg {
@@ -67,7 +78,7 @@ margin-bottom: 7%;
     color: #666766;
     font-size: 44pt;
     font-weight: 300;
-    font-family: 'Playfair Display', serif;
+    font-family: 'KingBasilLite', serif;
     float: left;
     margin-left: 44.5%
   }
@@ -89,14 +100,82 @@ margin-bottom: 7%;
   }
 
     /* TOP NAVIGATION BAR */
-/*
+    /* Dropdown Menu Styles */
+    ul {
+      margin: 0;
+    }
+
+    #menuicon {
+      height: 5%;
+      float: left;
+      position: absolute;
+      top: 2%;
+    }
+
+    ul ul {
+      position: absolute;
+      top: 6%;
+      background-color: #FFFFFF;
+      box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+      border-radius: 0px 15px 15px 15px;
+      padding: 0;
+      list-style: none;
+      width: 250px;
+      text-align: center;
+      margin: 0;
+      display: none;
+    }
+
+    ul ul li {
+      padding: 0%;
+      margin: 0%;
+      width: 100%;
+      position: relative;
+      border-bottom: 1px solid #d1bfe3;
+    }
+
+    ul ul li a {
+      color: #666766;
+      padding-top: 8%;
+      padding-bottom: 8%;
+      text-decoration: none;
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 16pt;
+      border-radius: 0px 15px 0px 0px;
+    }
+
+
+    ul ul li a:hover {
+      color: #FFFFFF;
+      transition: .5s;
+      border-radius: 0px 15px 0px 0px;
+    }
+
+
+    ul ul a:hover {
+      background-color: #d1bfe3;
+      width: 100%;
+      transition: .5s;
+    }
+
+    ul ul li.noBorder, ul li.noBorder a:hover {
+      border-style: none;
+      border-radius: 0px 0px 15px 15px;
+    }
+
+    .show {
+      display: block;
+    }
+
+    /*
+
     .navigation {
         padding-top: 1.5%;
         padding-bottom: 1.5%;
         padding-left: 0;
         padding-right: 0;
         width: 100%;
-        background-color: #CBA5CD;
         height: 4.5%;
     }
 
@@ -134,67 +213,84 @@ margin-bottom: 7%;
       width: 15%;
       padding: 0;
       float: left;
-    }
+    }*/
 
-      /* SOCIAL MEDIA ICONS 
+    /* SOCIAL MEDIA ICONS */
       .dribbble {
-        background: url("dribbblelogo.png");
-        background-repeat: no-repeat;
-        width: 3%;
-        height: 106%;
-        transition: .5s;
-        float: right;
-        margin-right: 10%
-      }
-
-      .dribbble:hover {
         background: url("dribbblelogogrey.png");
         background-repeat: no-repeat;
         width: 3%;
-        height: 106%;
+        height: 5%;
         transition: .5s;
         float: right;
-        margin-right: 10%
+        top: 2%;
+        position: absolute;
+        right: 1%;
+      }
+
+      .dribbble:hover {
+        background: url("dribbblelogolightgrey.png");
+        background-repeat: no-repeat;
+        width: 3%;
+        height: 5%;
+        transition: .5s;
+        float: right;
+        top: 2%;
+        position: absolute;
+        right: 1%;
       }
 
       .linkedin {
-        background: url("linkedinlogo.png");
+        background: url("linkedinlogogrey.png");
         background-repeat: no-repeat;
         background-repeat: no-repeat;
         width: 3%;
-        height: 106%;
+        height: 5%;
         transition: .5s;
         float: right;
+        top: 2%;
+position: absolute;
+right: 4%;
       }
 
       .linkedin:hover {
-        background: url("linkedinlogogrey.png");
+        background: url("linkedinlogolightgrey.png");
         background-repeat: no-repeat;
         width: 3%;
-        height: 106%;
+        height: 5%;
         transition: .5s;
         float: right;
+        top: 2%;
+position: absolute;
+right: 4%;
+
       }
 
       .instagram {
-        background: url("instagramlogo.png");
-        background-repeat: no-repeat;
-        width: 3%;
-        height: 106%;
-        transition: .5s;
-        float: right;
-      }
-
-      .instagram:hover {
         background: url("instagramlogogrey.png");
         background-repeat: no-repeat;
         width: 3%;
-        height: 106%;
+        height: 5%;
         transition: .5s;
         float: right;
+        top: 2%;
+position: absolute;
+right: 7.3%;
       }
-*/
-    /* MAIN IMAGE 
+
+      .instagram:hover {
+        background: url("instagramlogolightgrey.png");
+        background-repeat: no-repeat;
+        width: 3%;
+        height: 5%;
+        transition: .5s;
+        float: right;
+        top: 2%;
+position: absolute;
+right: 7.3%;
+      }
+
+    /* MAIN IMAGE
 
 
     .imagemain {
@@ -204,7 +300,7 @@ margin-bottom: 7%;
       background-repeat: no-repeat;
       background-size: cover;
 
-    } 
+    }
 
     .imagemain h1{
       color: #666766;
@@ -234,33 +330,35 @@ margin-bottom: 7%;
     float: left;
     padding-top: 3%;
     padding-bottom: 3%;
-    height: 86%;
+    height: 100%;
     width: 100%;
 	  background: white;
 	  position: absolute;
 	  top: 145%;
+    background-image: url("wallpaper.png");
+    background-size: cover;
   }
 
   .blockabout .icon img{
     float: left;
     width: 4%;
-    margin-top: 2%;
+    margin-top: 17%;
     margin-left: 2%;
   }
 
     /* PARAGRAPH INFO */
     .pintro {
       width: 25%;
-      float: right;
-      position: absolute;
-      left: 58%;
-      top: 25%;
-      margin-top: 3%;
+float: right;
+position: absolute;
+left: 58%;
+top: 42%;
+margin-top: 3%;
     }
 
     .pintro p {
       text-align: left;
-      font-size: 14pt;
+      font-size: 11pt;
     }
 
     .pintro a {
@@ -289,6 +387,7 @@ margin-bottom: 7%;
     top: 25%;
     left: 9.5%;
     margin-top: 3%;
+    display: none;
   }
 
   /* PORTFOLIO SECTION */
@@ -299,7 +398,7 @@ margin-bottom: 7%;
   #secondmark {
     float: left;
     width: 4%;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 2%;
   }
 
@@ -310,7 +409,7 @@ margin-bottom: 7%;
 .block-portfolio {
 background: white;
 	  position: absolute;
-	  top: 241%;
+	  top: 254%;
 }
   .block-portfolio img {
     background-color: white;
@@ -318,6 +417,7 @@ background: white;
 
   .block-portfolio h1 {
         margin-left: 40%;
+            margin-top: 6%;
   }
 
   .sandypoint, .ascent-image img, .january, .headshot img, .jolene img {
@@ -561,7 +661,6 @@ background: white;
         width: 92%;
         margin-left: 4%;
         margin-right: 2%;
-        background-color: white;
       }
 
         /* TOP NAVIGATION BAR */
@@ -861,7 +960,6 @@ background: white;
         width: 92%;
         margin-left: 4%;
         margin-right: 2%;
-        background-color: white;
       }
 
         /* TOP NAVIGATION BAR */
@@ -966,8 +1064,9 @@ background: white;
 
       .blockabout {
         padding-top: 45%;
-        height: 155%;
+        height: 205%;
         background-color: white;
+        background-image: url("aboutmobile.png");
       }
 
       .blockabout h1 {
@@ -985,7 +1084,7 @@ background: white;
         .pintro {
           width: 81%;
           left: 9%;
-          top: 161%;
+          top: 65%;
         }
 
         .pintro p {
@@ -1034,6 +1133,7 @@ background: white;
         background-color: white;
         width:100%;
         padding-bottom: 0%;
+        top:387%;
       }
 
       .block-portfolio h1 {
@@ -1149,6 +1249,12 @@ background: white;
       font-size: 114%;
     }
 
+    .navigation {
+      height: 9%;
+    width: 74%;
+    padding-top: 3%;
+    }
+
 
     .blockabout {
       padding-top: 53%;
@@ -1160,20 +1266,150 @@ background: white;
     }
   }
 
+  @media only screen and (max-width: 414px) {
+
+#menuIcon {
+  display: block;
+  width: 10%;
+  height: 6%;
+  float: left;
+  top: 3%;
+}
+
+.navigation {
+      padding-left: 1%;
+}
+
+.blockabout {
+  top: 102%;
+}
+
+#aboutheader {
+  margin-left: 30%;
+margin-top: 8%;
+}
+
+.blockabout .icon img {
+  margin-top: 4%;
+}
+.show {
+  top: 8%;
+left: 5%;
+}
+
+.dribble {
+      height: 6%;
+}
+
+.linkedin {
+  height: 6%;
+margin-right: 10%;
+
+}
+
+.instagram {
+  height: 6%;
+margin-right: 17%;
+}
+
+.blockabout {
+  padding-top: 12%;
+}
+
+.pintro {
+  top: 41%;
+}
+
+h2, h3 {
+  font-size: 125%;
+}
+
+#smallermark {
+  margin-right: 18%;
+  margin-top: -16%;
+}
+
+.block-portfolio {
+  top: 328%;
+}
+
+#portfolio {
+  margin-left: 21%;
+}
+
+#secondmark {
+  margin-right: 14%;
+  margin-top: 3%;
+}
+
+  }
+
 
   @media only screen and (max-width: 412px) {
     .imagemain {
       padding-bottom: 47%;
     }
 
+    .show {
+      left: 7%;
+    top: 9%;
+    }
+
+    h2, h3 {
+      width: 90%;
+    }
+
+    .navigation {
+          padding-left: 3%;
+    }
+
+    #menuIcon {
+      width: 10%;
+      display: block;
+      padding-top: 2%;
+      height: 6%;
+    }
+
+    #aboutheader {
+      margin-left: 31%;
+margin-top: 7%;
+    }
+
+    .dribbble {
+      height: 6%;
+    }
+
+    .linkedin {
+      margin-right: 11%;
+      height: 6%;
+    }
+
+    .instagram {
+      margin-right: 18%;
+    height: 6%;
+    }
+
+
+    .blockabout h1 {
+      margin-left: 31%;
+    }
+
+
     .blockabout {
-      padding-top: 8%;
+      padding-top: 13%;
       height: 155%;
       padding-bottom: -1px;
+      height: 205%;
+      background-color: white;
+      background-image: url("aboutmobile.png");
     }
-    
+
+    .blockabout .icon img {
+      margin-top: 3%;
+    }
+
     .pintro {
-      top: 167%;
+      top: 45%;
     }
 
     #smallermark {
@@ -1182,17 +1418,26 @@ background: white;
     }
 
     #portfolio {
-      margin-left: 7%;
+      margin-left: 21%;
     }
 
     #secondmark {
-      margin-right: 6%;
+      margin-right: 15%;
+      margin-top: 2%;
     }
 
     footer p {
       font-size: 15pt;
     }
-    
+
+    .block-portfolio {
+      top: 350%;
+    }
+
+    .block-portfolio h1 {
+    text-align: center;
+  }
+
     .block-portfolio p {
     font-size: 15pt;
     }
@@ -1212,8 +1457,22 @@ width:12%;
 }
 
 .blockabout {
-height: 162%;
+height: 208%;
 }
+
+.pintro {
+  top: 40%;
+}
+
+.pintro a h3 {
+  font-size: 137%;
+}
+
+.linkedin {
+  width: 10%;
+}
+
+
 
 #portfolio {
   font-size: 255%;
@@ -1237,23 +1496,31 @@ height: 162%;
       width: 22%;
     }
 
+    #aboutheader {
+      margin-left: 27%;
+margin-top: 7%;
+    }
+
 
       /* SOCIAL MEDIA ICONS */
       .dribbble, .dribbble:hover {
         width: 14%;
         margin-left: -2%;
         margin-right: 0;
+            height: 8%;
       }
 
       .linkedin, .linkedin:hover {
         width: 13%;
         margin-left: -2%;
-        margin-right: 4%;
+        margin-right: 12%;
+          height: 8%;
       }
 
       .instagram, .instagram:hover {
         width: 13%;
-        margin-right: 6%;
+        margin-right: 24%;
+          height: 8%;
       }
 
     /* MAIN IMAGE */
@@ -1269,8 +1536,8 @@ height: 162%;
   /* ABOUT SECTION */
 
   .blockabout {
-    padding-top: 53%;
-    height: 160%;
+        padding-top: 11%;
+    height: 181%;
   }
 
   .blockabout h1 {
@@ -1279,7 +1546,7 @@ height: 162%;
   }
 
   .blockabout .icon img{
-    margin-top: 11%;
+    margin-top: 4%;
     margin-left: 5%;
     width: 12%;
   }
@@ -1293,18 +1560,29 @@ height: 162%;
       font-size: 100%;
     }
 
+    .pintro a h3 {
+      font-size: 114%;
+    }
+
   /* PORTFOLIO SECTION */
 
   #portfolio {
-    margin-left: 3%;
+    margin-left: 19%;
     font-size: 250%;
   }
 
   #secondmark {
-    margin-right: 2%;
-    margin-top: 9%;
+    margin-right: 12%;
+    margin-top: 5%;
   }
 
+  .block-portfolio {
+    top: 331%;
+  }
+
+  .block-portfolio h1 {
+  text-align: center;
+}
 
   /* FOOTER SECTION */
 
