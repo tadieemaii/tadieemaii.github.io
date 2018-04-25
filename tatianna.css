@@ -267,7 +267,7 @@ right: 4%;
       }
 
       .instagram {
-        background: url("instagramlogogrey.png");
+        background: url("instagramlogo.svg");
         background-repeat: no-repeat;
         width: 3%;
         height: 5%;
@@ -279,7 +279,7 @@ right: 7.3%;
       }
 
       .instagram:hover {
-        background: url("instagramlogolightgrey.png");
+        background: url("instagramlogo.svg");
         background-repeat: no-repeat;
         width: 3%;
         height: 5%;
@@ -615,7 +615,7 @@ background: white;
     }
 
     .instagram2 {
-      background: url("instagramlogo.png");
+      background: url("instagramlogo.svg");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
@@ -625,7 +625,7 @@ background: white;
     }
 
     .instagram2:hover {
-      background: url("instagramlogogrey.png");
+      background: url("instagramlogo.svg");
       background-repeat: no-repeat;
       width: 3%;
       height: 5%;
